@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DXcel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="team.css" />
+
+  </head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src ="images/New Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <a href="https://www.instagram.com/3dxcel/"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:3dxcel@gmail.com"><i class="far fa-envelope"></i></a>
+                <a href="tel:9259151421,4693899898"><i class="fas fa-phone"></i></a>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                    <li><a href="contact.html">GET INVOLVED</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        
+        <div class="text-box">
+            
+            <h1>Our Intermediate Course</h1>
+            <p>The intermediate mark of the course builds upon the skills acquired in the beginner course and delves deeper into the world of CAD design. This course is aimed at individuals who have a basic understanding of CAD software and want to expand their capabilities. Participants will learn advanced modeling techniques, including multiviews, labeling parts, and dimensioning. Through hands-on exercises and projects, students will gain proficiency in creating detailed technical drawings and accurately representing objects in multiple views. The course will also cover topics such as section views, assembly drawings, and best practices for creating professional engineering documentation.
+           </p>
+           <div>
+            <a href="https://calendly.com/3dxcel/3dxcel-cad-session" target="_blank" class="meeting-hero-btn">Schedule Free Personalized Tutoring Here!</a>
+        </div>
+           
+        
+    </section>
+    
+
+ <!--------campus---------->
+
+<section class="campus">
+    <h1>Work Samples</h1>
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/Intermediate2.jpg">
+            
+        </div>
+        <div class="campus-col">
+                <img src="images/Intermediate1.jpg">
+                
+                </div>
+        <div class="campus-col">
+                <img src="images/Intermediate3.jpg">
+                
+                </div>
+        </div>
+    </div>
+</section>
+
+
+
+ <!-----------------------JavaScript Menu-------------------->
+ <script>
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+    document.body.style.overflowY = "hidden"; // Hides vertical scrollbar
+    document.documentElement.style.overflowX = "hidden"; // Hides horizontal scrollbar
+    navLinks.style.height = "100vh"; // Sets the menu height to the full viewport height
+  }
+
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+    document.body.style.overflowY = "auto"; // Shows vertical scrollbar
+    document.documentElement.style.overflowX = "auto"; // Shows horizontal scrollbar
+  }
+</script>
+
+</body>
+</html>

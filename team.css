@@ -1,0 +1,170 @@
+.icon {
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+
+.content {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  color: #84E4A8;
+  position: relative;
+}
+
+.content .par {
+  padding-left: 20px;
+  padding-bottom: 25px;
+  font-family: Arial;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+}
+
+.content h1 {
+  font-family: 'Times New Roman';
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: 9%;
+  letter-spacing: 2px;
+}
+
+.content .cn {
+  width: 160px;
+  height: 40px;
+  background: #3D5368;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.content .cn a {
+  text-decoration: none;
+  color: #ADCBDD;
+  transition: .3s ease;
+}
+
+.cn:hover {
+  background-color: #fff;
+}
+
+.content span {
+  color: #ADCBDD;
+  font-size: 65px;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.column {
+  width: 100%;
+  padding: 0.5em 0;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  color: #ADCBDD;
+}
+
+.card {
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+  padding: 3.5em 1em;
+  border-radius: 0.6em;
+  color: #1f003b;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+
+.card .img-container {
+  width: 8em;
+  height: 8em;
+  background-color: #a993ff;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.card h3 {
+  font-weight: 1000;
+  color: #3D5368;
+}
+
+.card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.5em 0 2em 0;
+  letter-spacing: 2px;
+  color: #3D5368;
+}
+
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+
+.card:hover {
+  background: linear-gradient(#6045ea, #8567f7);
+  color: #ffffff;
+}
+
+.card:hover .img-container {
+  transform: scale(1.15);
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 1em 7em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em;
+  }
+  .card {
+    padding: 5em 1em;
+  }
+  .column {
+    flex: 0 0 31%;
+    max-width: 31%;
+    justify-content: space-between;
+    justify-content: space-evenly;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

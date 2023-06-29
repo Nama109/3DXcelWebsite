@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DXcel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="team.css" />
+
+  </head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/New Logo" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <a href="https://www.instagram.com/3dxcel/"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:3dxcel@gmail.com"><i class="far fa-envelope"></i></a>
+                <a href="tel:9259151421,4693899898"><i class="fas fa-phone"></i></a>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                    <li><a href="contact.html">GET INVOLVED</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <section class="campus">
+            <h1>Our Courses</h1>
+            <p>Join our introductory courses to learn the basics of 3D printing and CAD software. <br> Whether you're a complete beginner or have some experience, our classes are designed to cater to different skill levels.</p>
+            <div class="row">
+                <div class="campus-col">
+                    <a href="beg.html" class="course-hero-link" target="_blank">
+                        <img src="images/Beg.jpg" alt="Beginner">
+                        <div class="layer">
+                            <h3>BEGINNER</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="campus-col">
+                    <a href="inter.html" class="course-hero-link" target="_blank">
+                        <img src="images/Intermediate1.jpg" alt="Intermediate">
+                        <div class="layer">
+                            <h3>INTERMEDIATE</h3>
+                        </div>
+                    </a>
+                </div>        
+                <div class="campus-col">
+                    <a href="adv.html" class="course-hero-link" target="_blank">
+                        <img src="images/Advanced.jpg" alt="Advanced">
+                        <div class="layer">
+                            <h3>ADVANCED</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-----------------------JavaScript Menu-------------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+  
+    function showMenu() {
+      navLinks.style.right = "0";
+      document.body.style.overflowY = "hidden"; // Hide vertical scrollbar
+      document.documentElement.style.overflowX = "hidden"; // Hide horizontal scrollbar
+      navLinks.style.height = "100vh"; // Set the menu height to the full viewport height
+    }
+  
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+      document.body.style.overflowY = "auto"; // Show vertical scrollbar
+      document.documentElement.style.overflowX = "auto"; // Show horizontal scrollbar
+    }
+  </script>
+      
+</body>
+</html>
